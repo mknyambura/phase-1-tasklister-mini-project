@@ -6,21 +6,35 @@ html {
 
 body {
   min-height: 100%;
-  min-width: 100%;
+  min-width: 70%;
   background: linear-gradient(pink, violet);
 }
 
 button {
-  font-size: 7px;
+  font-size: 15px;
+  color: #000;
+  font-weight: bold;
+  padding: 2px;
+  margin: 2px;
+  background: transparent;
+  border: none;
 }
-
+li {
+  list-style: none;
+}
 #main-content {
+  top: 10%;
+  /* width: 800px; */
+  height: 90%;
+  margin-left: 15%;
+  margin-top: 5%;
   position: relative;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
+  align-content: center;
   flex-direction: column;
-  border: 1px solid #333;
+  border: 1px solid #33333305;
   background: rgba(255, 255, 255, 0.3);
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
@@ -29,9 +43,37 @@ button {
 
 #list {
   margin: 10px;
-  border: 1px solid #333;
+  border: 1px solid #33333305;
   background: rgba(255, 255, 255, 0.75);
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+}
+#list h2 {
+  text-align: center;
+  font-weight: bold;
+}
+#label {
+  font-weight: bold;
+}
+input[type="submit"]{
+  font-size: 15px;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+}
+input[type="submit"]:hover{
+  color: rgb(18, 209, 209);
+  background: #fff;
+  transition: 0.6s ease-in-out;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+}
+input[type="text"]{
+  padding: 10px 20px;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid rgb(220, 225, 230);
+  font-size: 16px;
 }
